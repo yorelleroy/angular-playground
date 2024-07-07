@@ -1,0 +1,12 @@
+<div class="body">
+  <section>
+    <p class="section-title">Parent Component</p>
+    <p>loggedInUser: {{ loggedInUser }}</p>
+    <p>size: {{ size }}</p>
+  </section>
+  <app-child
+    [user]="loggedInUser"
+    [(size)]="size"
+    (customEvent)="customEventHandler()"
+  />
+</div>

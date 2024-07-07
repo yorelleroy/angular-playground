@@ -1,0 +1,23 @@
+.hero {
+  color: #6096d2;
+  padding: 2rem inherit;
+  font-size: 1.5rem;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+nav a {
+  background-color: white;
+  padding: 0.5rem;
+  min-width: 5rem;
+  display: block;
+  text-align: center;
+  border-radius: 15px;
+  border: 2px solid red;
+  text-decoration: none;
+  color: black;
+}

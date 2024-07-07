@@ -1,0 +1,28 @@
+<div class="body">
+  <section>
+    <p class="section-title">&#64;If</p>
+    @if (true) {
+    <p>It's disabled!</p>
+    } @else {
+    <p>It's enabled!</p>
+    }
+  </section>
+  <section>
+    <p class="section-title">&#64;For</p>
+    @for (fruit of fruits; track $index) { @if (fruit == 'banana') {
+    <p>{{ fruit }} is my favorite!</p>
+    } @else {
+    <p>{{ fruit }}</p>
+    } } @empty {
+    <p>no fruits available</p>
+    }
+  </section>
+  <section>
+    <p class="section-title">&#64;Switch</p>
+    @switch (myName) { @case ('Roy') {
+    <p>Roy is my nickname</p>
+    } @case ('Lazala') {
+    <p>Lazala is my lastname</p>
+    } }
+  </section>
+</div>

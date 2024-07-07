@@ -1,0 +1,48 @@
+<!-- <div class="body">
+  I am the parent component.
+
+  <section>
+    <h1>Interpoliaton</h1>
+    <p>The value from ts is {{ interpolationValue }}</p>
+  </section>
+
+  <app-child />
+</div> -->
+<div class="body">
+  <section>
+    <p class="section-title">Interpolation</p>
+    <p>My name is unknown.</p>
+    <p>I am 5 years old.</p>
+  </section>
+  <section>
+    <p class="section-title">Class and Style Binding</p>
+    <div class="flex">
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </section>
+  <section>
+    <p class="section-title">Property Binding</p>
+    <div class="flex-col">
+      <label for="input1">Value Property</label>
+      <input id="input1" type="text" placeholder="type anything here" />
+      <label for="input2">Disable Property</label>
+      <input id="input2" type="text" placeholder="disable this" disabled />
+    </div>
+    <button (click)="enableInputHandler()">
+      {{ isDisabled ? "enable" : "disable" }} input
+    </button>
+  </section>
+  <section>
+    <p class="section-title">Event Binding</p>
+    <div class="flex-col">
+      <input
+        #input
+        (input)="inputHandler($event)"
+        type="text"
+        placeholder="type anything here"
+      />
+    </div>
+    <button class="mb-5" (click)="showAlert(input.value)">click me</button>
+  </section>
+</div>

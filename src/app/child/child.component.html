@@ -1,0 +1,24 @@
+<div class="body">
+  <section>
+    <p class="section-title">Input</p>
+    <p>The current logged in user is {{ user }}.</p>
+  </section>
+  <section>
+    <p class="section-title">Output</p>
+    <button (click)="emitCustomEvent()">Emit Event</button>
+  </section>
+  <section>
+    <p class="section-title">Two-way Binding</p>
+    <button (click)="decreaseSize()">-</button>
+    <p>{{ size }}</p>
+    <button (click)="increaseSize()">+</button>
+    <p [style.font-size]="size + 'px'">Hello, {{ user }}!</p>
+  </section>
+</div>
+
+<!-- <dialog #modal>
+  <p>This is a modal!</p>
+  <button (click)="closeModal()">close</button>
+</dialog>
+
+<button (click)="openModal()">open modal</button> -->
